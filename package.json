@@ -1,0 +1,53 @@
+{
+  "name": "@bitradius/iptables-helper",
+  "version": "0.0.2",
+  "description": "Simple IPTables helper",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "test": "yarn style",
+    "style": "./node_modules/.bin/eslint src/**/*.ts",
+    "fix-style": "./node_modules/.bin/eslint --fix src/**/*.ts",
+    "prepublishOnly": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitradius/iptables-helper.git"
+  },
+  "keywords": [
+    "iptables"
+  ],
+  "author": "BitRadius Holdings, LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bitradius/iptables-helper/issues"
+  },
+  "homepage": "https://github.com/bitradius/iptables-helper#readme",
+  "dependencies": {
+    "@bitradius/memcache-helper": "^0.0.5",
+    "@types/which": "^2.0.0",
+    "dotenv": "^8.2.0",
+    "which": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.25.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^8.3.2",
+    "ts-node": "^9.1.1",
+    "typedoc": "^0.20.36",
+    "typedoc-plugin-no-inherit": "^1.2.2",
+    "typescript": "^4.2.4"
+  }
+}
